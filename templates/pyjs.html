@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Програмування</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () { // функції Python
+            $("#morePoss").click(function () {
+                $("#possPy").toggle(300);
+                if($("#morePoss").text() == "more=>"){
+                    $("#morePoss").html("less...")
+                } else {
+                    $("#morePoss").html("more=>")
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () { // функції JavaScript
+            $("#morePossJS").click(function () {
+                $("#possJS").toggle(300)
+                if($("#morePossJS").text() == "more..."){
+                    $("#morePossJS").html("less...")
+                } else {
+                    $("#morePossJS").html("more...")
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () { // функції Плюси JavaScript
+            $("#showPlusJS").click(function () {
+                $("#plusJS").toggle(300);
+                if ($("#showPlusJS").text() == "show"){
+                    $("#showPlusJS").html("hide")
+                } else {
+                    $("#showPlusJS").html("show")
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {        // закриття
+            $("#possPy").toggle();            // Python
+            $("#possJS").toggle();           // JavaScript
+            $("#plusJS").toggle();          // JavaScript
+            $("#mainContent").hide();
+            $("#mainContent").show(1700); // загальна анімація
+            $("#navMobile").hide()     // menu
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menuButton").click(function () {
+                $("#navMobile").toggle(300);
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+
+    <style>
+        #pyjs {
+            color: darkred;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<header id="navPC">
+    <a href="index.html">
+        <div class="headElem" id="main">
+            Головна
+        </div>
+    </a>
+    <a href="physics.html">
+        <div class="headElem" id="phys">
+            Фізика
+        </div>
+    </a>
+    <a href="math.html">
+        <div class="headElem" id="math">
+            Математика
+        </div>
+    </a>
+    <a href="pyjs.html">
+        <div class="headElem" id="pyjs">
+            Програмування
+        </div>
+    </a>
+</header>
+
+
+
+<img src="../static/menuButton.svg" alt="menu" id="menuButton">
+<header id="navMobile">
+
+    <a href="index.html">
+        <div class="headElemMobile" id="main">
+            Головна
+        </div>
+    </a>
+    <a href="physics.html">
+        <div class="headElemMobile" id="phys">
+            Фізика
+        </div>
+    </a>
+    <a href="math.html">
+        <div class="headElemMobile" id="math">
+            Математика
+        </div>
+    </a>
+    <a href="pyjs.html">
+        <div class="headElemMobile" id="pyjs">
+            Програмування
+        </div>
+    </a>
+</header>
+
+
+<hr>
+
+
+<div id="mainContent">
+    <h1>
+        Програмування
+    </h1>
+    <p>
+        На протязі останнього часу вплив ІТ-технологій невпинно зростає. З кожним роком програмування знаходить своє використання
+        у нових професіях, та все більше змінює наше особисте життя. Отже, навіть мінімальні знання у написанні коду, зможуть не абияк
+        допомогти отримати омріяну посаду.
+    </p>
+    <h2>
+        Як почати?
+    </h2>
+    <h3>Python</h3>
+    <p>
+        Наразі існує безліч різноманітних мов програмування, загальних, або пристосованих до певних задач, тож новачку справді важко обрати, що йому
+        варто вивчати. Сучасні ІТ-спеціалісти впевненно радять почати з Python, який має ряд незаперечних плюсів:
+        <ul>
+            <li>Надзвичайно простий синтаксис</li>
+            <li>Підтримка двох парадигм(фунціональне програмування та ООП)</li>
+            <li>Значна кількість сторонніх бібліотек, які дозволяють використовувати Python для виконання майже будь-яких задач</li>
+        </ul>
+        Разом ці переваги дозволяють Python роками триматись у топ 10 найбільш жаданих мов програмування. <br>
+        <b>Які можливості надає Python?</b> <span id="morePoss">more=></span><br>
+            <p id="possPy">
+                Python можна застосувати для виконання майже будь-яких задач. Використовуючи популярні фреймворки Django або Flask, можна швидко
+                написати власний сайт, а неймовірна кількість бібліотек та середовищ розробки, допомагає у вирішенні побутових та високорівневих задач(обробка
+                фото/відео, документів, тестування програм, Data science, Machine learning, ...).
+            </p>
+    </p>
+    <h3>JavaScript</h3>
+    <p>
+        Важко уявити, що до 1996 року більшість веб-сайтів були більше схожими на газету, адже все що можна було зробити - переглядати уже завантажену сторінку, або
+        надсилати данні на сервер. Та з виходом JavaScript все суттєво змінилось. JS був створений як єдина мова програмування для усіх браузерів, що дозволяла
+        проводити потрібні обрахунки, завантажувати нові данні та змінювати сторінку, не покидаючи її.
+    </p>
+
+    <b>Для чого потрібно знати JavaScript? </b><span id="morePossJS">more...</span>
+
+    <p id="possJS">
+        З плином часу, сайти стають все складнішими та складнішими, відповідно до вимог суспільства, а значення JS - разом з ними. На сьогодні,
+        базові документи (html, css) є лише скелетом сторінки, коли JavaScript - м'язи та мозок. Щоб швидко створити якісний веб-сайт, який можна легко
+        розвивати в майбутньому, доводиться застосовувати vue.js, React.js або Angular.js, і кожен з них написаний на JavaScript.
+        <br>
+        JS ставав все популярніше і популярніше, тож на його основі вийшов Node.js - мова програмування, яка перетворила JavaScript в мову загального використування.
+    </p>
+    <br>
+    <b>Плюси JavaScript: </b> <span id="showPlusJS">show</span>
+    <ul id="plusJS">
+        <li>Відносно простий та гнучкий синтаксис</li>
+        <li>Швидкість виконання коду</li>
+        <li>Неймовірна кількість сторнніх модулів, для виконання різноманітних задач</li>
+    </ul>
+
+    <h1>
+        Що я пропоную?
+    </h1>
+
+    <p>
+        Програма вивчення - почати з Python та його можливостями, ознайомитись з структурою сайтів, перейти до JS, та поглиблити знання у веб-програмуванні.
+        <br>
+
+        <b> Загальний план: </b> <br>
+        <ul>
+            <li><b> Python </b></li>
+                <ul>
+                    <li>Ознайомлення з принципами та використанням програмування, налаштування середовища розробки</li>
+                    <li>Основи Python</li>
+                    <li>Парадигми програмування</li>
+                    <li>Автоматизація</li>
+                    <li>Data scraping</li>
+                    <li>Machine Learning / Data Science</li>
+                    <li>Основи web-development`у з Pyhton</li>
+                </ul>
+            <li><b> JavaScript </b></li>
+                <ul>
+                    <li>Основи JavaScript</li>
+                    <li>ООП та функціональне програмування</li>
+                    <li>Прогресивний web-development</li>
+                    <li>Практичне застосування JS</li>
+                </ul>
+    </ul>
+
+    Приблизний план на кожен урок: <br>
+    <ul>
+        <li>Перевірка самостійного завдання</li>
+        <li>Пояснення та дискусія нового матеріалу</li>
+        <li>Практичне застосування вивченого матеріалу</li>
+        <li>Пояснення умов самостійного завдання</li>
+    </ul>
+
+    Наприкінці курсу у вас буде потужна основа для подальшого розвитку в IT напрямку. Ви зможете розуміти синтаксис Python та JS, застосовувати їх у власному проектах.
+    Ви зрозумієте, що таке програмування, різновиди його застосування. <br>
+    Тривалість уроку - одна година, ціна - <i> договірна </i>, вік - від 13 років. Можливе навчання у парах (більше одного учня).
+
+    </p>
+
+
+</div>
+
+
+</body>
+</html>

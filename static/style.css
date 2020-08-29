@@ -1,0 +1,93 @@
+@font-face{
+
+font-family: 'JetBrains Mono';
+
+src: url('./JetBrainsMono-Regular.ttf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: "JetBrains Mono";
+    border: black;
+    font-size: 1.5em;
+}
+
+header {
+    padding-top: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+.headElem {
+    float: left;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.mainContent {
+    font-family: "JetBrains Mono";
+}
+
+#myImg {
+    float: right;
+    width: 60%;
+}
+
+#morePoss {
+    color: rgba(22,19,22,0.71);
+}
+
+#morePossJS {
+    color: rgba(22,19,22,0.71);
+}
+
+#showPlusJS {
+    color: rgba(22,19,22,0.71);
+}
+
+#navMobile{
+    display: none;
+}
+
+#menuButton {
+    display: none;
+}
+
+@media only screen and (orientation: portrait){
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.5em;
+    }
+
+    #menuButton {
+        display: block;
+        width: 10%;
+        padding-top: 5%;
+    }
+
+    #navPC{
+        display: none;
+    }
+
+    #navMobile{
+        display: block;
+        font-size: 200%;
+    }
+
+    .headElemMobile {
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    }
+
+}

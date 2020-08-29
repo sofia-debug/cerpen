@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фізика</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="icon" href="../static/favicon.ico">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#navMobile").hide()
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menuButton").click(function () {
+                        $("#navMobile").toggle(300);
+            });
+        });
+    </script>
+
+
+    <style>
+        #phys {
+            color: darkred;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<header id="navPC">
+    <a href="index.html">
+        <div class="headElem" id="main">
+            Головна
+        </div>
+    </a>
+    <a href="physics.html">
+        <div class="headElem" id="phys">
+            Фізика
+        </div>
+    </a>
+    <a href="math.html">
+        <div class="headElem" id="math">
+            Математика
+        </div>
+    </a>
+    <a href="pyjs.html">
+        <div class="headElem" id="pyjs">
+            Програмування
+        </div>
+    </a>
+</header>
+
+
+
+<img src="../static/menuButton.svg" alt="menu" id="menuButton">
+<header id="navMobile">
+
+    <a href="index.html">
+        <div class="headElemMobile" id="main">
+            Головна
+        </div>
+    </a>
+    <a href="physics.html">
+        <div class="headElemMobile" id="phys">
+            Фізика
+        </div>
+    </a>
+    <a href="math.html">
+        <div class="headElemMobile" id="math">
+            Математика
+        </div>
+    </a>
+    <a href="pyjs.html">
+        <div class="headElemMobile" id="pyjs">
+            Програмування
+        </div>
+    </a>
+</header>
+
+
+<hr>
+
+
+<div class="mainContent">
+    <h1>
+        Фізика
+    </h1>
+    <p>
+        Фізика - один з фундаментальних предметів, потрібних для розуміння природи явищ навколо. Більшість технічних факультетів враховують бал із ЗНО з
+        фізики не просто так. Для успішного вивчення цієї науки потрібно точно уявляти певне явище, розуміти його тонкощі та знати,
+        яка формула описує відповідний процес. Фізика навчає нас систематизувати задачу та використовувати отриманні знання (математику, теорію фізики)
+        для вирішення проблеми. Ці принципи є дуже загальними, вони лежать в основі багатьох інших професійних напрямків, та допомагають вирішувати
+        ситуації, що виникають протягом всього життя. Тож твердження, що природничі науки потрібні лише інженерам, є вкрай невірним.
+    </p>
+</div>
+
+
+</body>
+</html>

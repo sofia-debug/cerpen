@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Головна</title>
+
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="icon" href="../static/favicon.ico">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#menuButton").click(function () {
+                $("#navMobile").toggle(300);
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#navMobile").hide()
+        });
+    </script>
+
+
+    <style>
+        #main {
+            color: darkred;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<header id="navPC">
+    <a href="index.html">
+        <div class="headElem" id="main">
+            Головна
+        </div>
+    </a>
+    <a href="physics.html">
+        <div class="headElem" id="phys">
+            Фізика
+        </div>
+    </a>
+    <a href="math.html">
+        <div class="headElem" id="math">
+            Математика
+        </div>
+    </a>
+    <a href="pyjs.html">
+        <div class="headElem" id="pyjs">
+            Програмування
+        </div>
+    </a>
+</header>
+
+
+
+<img src="../static/menuButton.svg" alt="menu" id="menuButton">
+<header id="navMobile">
+
+    <a href="index.html">
+        <div class="headElemMobile" id="main">
+            Головна
+        </div>
+    </a>
+    <a href="physics.html">
+        <div class="headElemMobile" id="phys">
+            Фізика
+        </div>
+    </a>
+    <a href="math.html">
+        <div class="headElemMobile" id="math">
+            Математика
+        </div>
+    </a>
+    <a href="pyjs.html">
+        <div class="headElemMobile" id="pyjs">
+            Програмування
+        </div>
+    </a>
+</header>
+
+
+<hr>
+
+
+<div class="mainContent">
+    <h1> Головна </h1>
+    
+    <p>
+        Мене звати Іван Мархайчук, я учень 11 класу Вараської гімназії. З п'ятого класу я активно приймаю участь в олімпіадах з фізики та математики,
+        стабільно займаю призові місця на міських етапах (міг би і на обласних, якщо б не Лобанов :І). На початку 10 класу я почав активно цікавитись ІТ сферою,
+        та досяг значних успіхів у цьому напрямку.
+    </p>
+    <p>
+        Я  пропоную вам послуги репетитора, із вищезазначених предметів(математика, фізика, програмування/інформатика). Хоч в мене немає педадогічної освіти,
+        мої знання ще свіжі, і я пам'ятаю, що саме мені допомогло зрозуміти певний матеріал, які проблеми можуть виникнути та що зробити, щоб їх усунути. Простіше кажучи, я
+        розумію моїх однолітків та зможу подати матеріал в найпростішій формі.
+    </p>
+
+    <img src="../static/imgs/ava.jpg" alt="Моє фото" id="myImg">
+</div>
+</body>
+</html>
